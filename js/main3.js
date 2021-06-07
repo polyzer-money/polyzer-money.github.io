@@ -8,6 +8,8 @@ export function main() {
     const renderer = new THREE.WebGLRenderer({ canvas });
 
     const perspective = 800;
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
     // this equation
     const fov = 180 * (2 * Math.atan(innerHeight / 2 / perspective)) / Math.PI
@@ -48,7 +50,6 @@ export function main() {
         const height = canvas.clientHeight;
         const needResize = canvas.width !== width || canvas.height !== height;
         if (needResize) {
-            console.log("need resize");
             renderer.setSize(width, height, false);
         }
         return needResize;
