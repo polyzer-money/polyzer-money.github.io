@@ -48,6 +48,7 @@ export function main() {
         const height = canvas.clientHeight;
         const needResize = canvas.width !== width || canvas.height !== height;
         if (needResize) {
+            console.log("need resize");
             renderer.setSize(width, height, false);
         }
         return needResize;
