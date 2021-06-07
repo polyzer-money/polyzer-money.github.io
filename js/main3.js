@@ -24,7 +24,9 @@ export function main() {
     controls.update();
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('black');
+    scene.background = new THREE.Color('0xaaccff');
+    scene.fog = new THREE.FogExp2(0xaaccff, 0.0007);
+    
 
     {
         const skyColor = 0xB1E1FF;  // light blue
