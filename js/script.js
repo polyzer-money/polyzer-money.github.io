@@ -8,16 +8,15 @@ switch(imgType){
     case "1":
         document.getElementById("c").remove();
         document.getElementById("i").src = "https://i.imgur.com/2bwE3Ik.png";
-        document.getElementsByTagName('meta')["og:url"].content = "https://polyzer-money.github.io?img=1";
-        document.getElementsByTagName('meta')["og:image"].content = "https://i.imgur.com/2bwE3Ik.png";
+        document.getElementsByTagName('meta')[2].content = "https://polyzer-money.github.io?img=1";
+        document.getElementsByTagName('meta')[3].content = "https://i.imgur.com/2bwE3Ik.png";
         break;
     default:
         document.getElementById("i").remove();
-        document.getElementsByTagName('meta')["og:type"].content = "website";
-        document.getElementsByTagName('meta')["og:title"].content = "Polyzer's Website";
-        document.getElementsByTagName('meta')["og:description"].content = "Website where I test fun stuff";
-        document.getElementsByTagName('meta')["og:url"].content = "https://polyzer-money.github.io";
-        document.getElementsByTagName('meta')["og:image"].content = "https://i.imgur.com/yFq4cSC.png";
+        document.getElementsByTagName('meta')[0].content = "Polyzer's Website"; //title
+        document.getElementsByTagName('meta')[1].content = "Website where I test fun stuff"; //description
+        document.getElementsByTagName('meta')[2].content = "https://polyzer-money.github.io"; //url
+        document.getElementsByTagName('meta')[3].content = "https://i.imgur.com/yFq4cSC.png"; //image
         break;
 }
 
