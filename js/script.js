@@ -7,7 +7,7 @@ const imgType = urlParams.get('img')
 switch(imgType){
     case "1":
         document.getElementById("c").remove();
-        document.getElementById("i").src = "https://i.imgur.com/2bwE3Ik.png";
+        document.getElementById("i").src = "images/bricks.png";
 	/*
         document.getElementsByTagName('meta')[2].content = "https://polyzer-money.github.io?img=1";
         document.getElementsByTagName('meta')[3].content = "https://i.imgur.com/2bwE3Ik.png";
